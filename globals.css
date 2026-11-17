@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #04101c;
+  color: #e8f1f8;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+canvas {
+  outline: none;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(8, 20, 34, 0.82), rgba(5, 12, 22, 0.82));
+  border: 1px solid rgba(255, 214, 120, 0.25);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+}
+
+.gold {
+  color: #ffd36b;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.25s ease-out;
+}
